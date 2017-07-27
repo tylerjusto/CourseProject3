@@ -21,7 +21,7 @@ const eventsData = [
 function EventCard(props){
     return (
         <div className="event-card">
-            <h2>{props.title}</h2>h2>
+            <h2>{props.title}</h2>
             <div><strong>When:</strong> {props.time}</div>
             <p>{props.description}</p>
         </div>
@@ -31,11 +31,11 @@ function EventCard(props){
 
 export default function Events(){
 
-    let eventsDisplay = events.Data.map((event)) => <EventCard time={event.time}
-                                                               title={event.title}
-                                                               description={event.description}/> );
+    let eventsDisplay = eventsData.map((event) => <EventCard time={event.time}
+                                                             title={event.title}
+                                                             description={event.description}/> );
 
 return (
     <div>{eventsDisplay}</div>
-);
+    );
 }
