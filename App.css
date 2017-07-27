@@ -1,0 +1,59 @@
+.App-hero{
+  height:calc(70vh - 6em);
+  min-height: 10em;
+  display:flex;
+  flex-direction:column;
+  transition: height .25s;
+}
+
+.App-hero.minimized{
+  height: 10em;
+}
+
+header {
+  background:url('./Images/TanningOasis.png') 50% no-repeat;
+  background-size: cover;
+  flex-grow:1;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction:column;
+  color: white;
+  text-shadow: 3px 2px blue;
+  text-align:center;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header h1{
+  font-size: 5em;
+  text-shadow: 3px 2px blue;
+  font-family: 'Barrio', cursive;
+}
+
+nav{
+  height:6em;
+  background-color:white;
+  text-align:right;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top: black double 4px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav a {
+  padding: .5em;
+}
+
+.staff-image{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.staff-card{
+  text-align:center ;
+}
